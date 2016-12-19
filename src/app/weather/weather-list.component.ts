@@ -6,8 +6,7 @@ import { WeatherService } from './weather.service';
 
 @Component({
   selector: 'app-weather-list',
-  templateUrl: './weather-list.component.html',
-  providers: [WeatherService]
+  templateUrl: './weather-list.component.html'
 })
 export class WeatherListComponent implements OnInit {
   weatherItems: WeatherItem[];

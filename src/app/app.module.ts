@@ -1,3 +1,4 @@
+import { WeatherService } from './weather/weather.service';
 import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
@@ -19,7 +20,7 @@ import { WeatherSearchComponent } from './weather/weather-search.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [WeatherService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
