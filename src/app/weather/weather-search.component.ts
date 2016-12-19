@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { NgForm, FormGroup } from '@angular/forms';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-weather-search',
@@ -14,7 +14,7 @@ export class WeatherSearchComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSubmit(form: NgForm) {
+  onSubmit(form: FormGroup) {
     console.log(form);
     console.log(form.value.location);
   }
