@@ -2,9 +2,13 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `
+    <header>
+      <h1>Angular 2 Weather</h1>
+    </header>
+    <app-weather-search></app-weather-search>
+    <app-weather-list></app-weather-list>
+  `
 })
 export class AppComponent {
-  title = 'app works!';
 }
