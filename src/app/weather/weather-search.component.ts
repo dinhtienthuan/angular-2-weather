@@ -3,7 +3,7 @@ import { WeatherService } from './weather.service';
 import { Component, OnInit } from '@angular/core';
 
 import { FormGroup } from '@angular/forms';
-import { Subject } from 'rxjs/Subject';
+import { Subject } from 'rxjs';
 @Component({
   selector: 'app-weather-search',
   templateUrl: './weather-search.component.html',
